@@ -36,6 +36,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1 \
     persist.sys.dun.override=0 \
 
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+   SystemUI \
+   Launcher3QuickStep
+   
 # TEMP: Enable transitional log for Privileged permissions
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.control_privapp_permissions=log
@@ -68,6 +72,7 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 endif
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.face.moto_unlock_service=$(TARGET_FACE_UNLOCK_SUPPORTED)
+endif
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
