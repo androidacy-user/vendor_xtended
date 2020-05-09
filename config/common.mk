@@ -180,8 +180,10 @@ PRODUCT_PACKAGES += \
     OmniStyle \
     Lawnchair \
     WallpaperPicker2 \
-    PixelThemesStub2019
-
+    PixelThemesStub2019 \
+    Shishufied   \
+    Launcher3QuickStep
+    
 # Cutout control overlays
 PRODUCT_PACKAGES += \
     HideCutout \
